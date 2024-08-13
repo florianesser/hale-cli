@@ -9,7 +9,7 @@ plugins:
   - "@semantic-release/changelog"
   - - "@semantic-release/exec"
     - verifyReleaseCmd: ./gradlew verifyNoSnapshotDependencies
-      publishCmd: RELEASE=true ./gradlew showVersion verifyReleaseVersion $PUBLISH_TASKS
+      publishCmd: RELEASE=true ./gradlew showVersion verifyReleaseVersion distZip
   - - "@semantic-release/git"
     - assets:
       - CHANGELOG.md
